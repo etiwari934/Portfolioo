@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Management System</title>
+</head>
+<body>
+    <h1>Lead Management System</h1>
+    <p>A Salesforce application to streamline lead tracking and assignment using Process Builder and Apex triggers.</p>
+    <pre><code>// Apex trigger code example
+trigger LeadAssignmentTrigger on Lead (before insert) {
+    for (Lead lead : Trigger.new) {
+        lead.OwnerId = '005xx000001SvFG';
+    }
+}
+</code></pre>
+</body>
+</html>
